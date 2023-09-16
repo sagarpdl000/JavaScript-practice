@@ -44,6 +44,41 @@ function myName(){
   }
 
   //console.log(userLoggedInMessage("sagar"));
-  console.log(userLoggedInMessage());
+  //console.log(userLoggedInMessage());
 
+
+ /// Situations where we don't know how many arguments we will get, like in shopping cart.
+ 
+ function cartPriceCalculation(...num1){  // by putting ... it will return the arrays of arguments and we can do operation on it.  
+    
+    //function cartPriceCalculation(val1, val2, ...num1)  it will return  [300,4] because 3 is assigned to val1, 100 is assigned to val2 and rest will be in array.
+
+    return num1;
+
+ }
+ //console.log(cartPriceCalculation(3, 100, 300,4))
+
+//Passing object in function
+
+const userDetails = {
+    name : "Tom holland",
+    product: "Camara",
+    price : 3000
+}
+
+function handleObject(Details){
+    console.log(`${Details.name} bought ${Details.product} at the price of ${Details.price}.`)
+}
+
+// handleObject(userDetails);
+
+//Passing array in function
+
+const array = [200, 300, 63, 78, 90]
+
+function arrayCalc (arr){
+        console.log(arr[1])
+}
+
+arrayCalc(array)
 
