@@ -60,19 +60,49 @@ const LoggedInFromGoogle = true;
 const LoggedInFromEmail = false;
 
 if (userLoggedIn && haveSufficientBalance){   //AND
-    console.log("You can purchase the book")
+   // console.log("You can purchase the book")
 }
 else{
-    console.log("You can't purchase the book")
+    //console.log("You can't purchase the book")
 }
 
 
 if (LoggedInFromEmail || LoggedInFromGoogle){  //OR
-    console.log("You are logged in.")
+   // console.log("You are logged in.")
 }
 else{
-    console.log("You are not logged in.")
+   // console.log("You are not logged in.")
 }
+
+
+
+
+
+// Ternary operator
+// condition ? true : false
+
+const bookPrice = 500;
+
+//bookPrice <=500 ? console.log ("You can buy the book.") : console.log("You cannot buy the book")
+
+
+
+
+
+
+
+
+
+// Nullish coalescing operator (??) : null undefined
+
+let val1;
+
+//val1 =5 ?? 10
+val1 = null ?? 15
+console.log(val1)  // If the value is null or undefined, it will give the second value.
+
+//console.log(val1)  // If the value is not null or undefined, it will give the first value.
+
 
 
 
