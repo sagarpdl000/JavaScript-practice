@@ -30,9 +30,54 @@ if (false){
 
 // Implicit scope
 
-const balance  = 3000000;
+//const balance  = 3000000;
 
 //if (balance > 2500000) console.log("That's great.")
+
+
+
+
+//Nested if else
+
+// const balance  = 1100;
+
+// if (balance < 500){
+//     console.log("less than 500");
+// }
+
+// else if (balance < 750){
+//     console.log("less than 750");
+// }
+
+// else{
+//     console.log("less than 1200")
+// }
+
+
+const userLoggedIn = true
+const haveSufficientBalance = false
+const LoggedInFromGoogle = true;
+const LoggedInFromEmail = false;
+
+if (userLoggedIn && haveSufficientBalance){   //AND
+    console.log("You can purchase the book")
+}
+else{
+    console.log("You can't purchase the book")
+}
+
+
+if (LoggedInFromEmail || LoggedInFromGoogle){  //OR
+    console.log("You are logged in.")
+}
+else{
+    console.log("You are not logged in.")
+}
+
+
+
+
+
 
 
 
