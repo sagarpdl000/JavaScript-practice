@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(57, 54, 59);
+            color:rgb(152, 155, 155)
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+
+    <script>
+        const parent = document.querySelector('.parent')
+        // console.log(parent)
+        // console.log(parent.children)
+        // console.log(parent.children[0].innerHTML)
+
+        // for (let index = 0; index < parent.children.length; index++) {
+        //     console.log(parent.children[index].innerHTML)
+            
+
+        // }
+
+        // parent.children[1].style.color = 'orange';
+
+        const dayone = document.querySelector('.day')
+        // console.log(dayone)
+
+        // console.log(dayone.parentElement)
+        // console.log(dayone.nextElementSibling)
+
+
+            console.log("Nodes: ", parent.childNodes);
+    </script>
+    
+</body>
+</html>
