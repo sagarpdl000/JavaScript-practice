@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+
+    body{
+        background-color: rgb(57, 54, 59);
+        color:rgb(152, 155, 155)
+    }
+
+    </style>
+</head>
+
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+
+
+
+    <script>
+
+       function addLanguage(languagename){
+
+        const li = document.createElement('li')
+        li.innerHTML = `${languagename}`
+        document.querySelector('.language').appendChild(li)
+
+       }
+       addLanguage("Python")
+
+
+
+
+
+
+    //    Optimized way (No need to traverse whole tree)
+       function optimizedway (langName){
+
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+
+        document.querySelector('.language').appendChild(li)
+
+       }
+        optimizedway("C++")
+
+
+
+        // Editing value
+
+        const secondLang = document.querySelector('li:nth-child(2)')
+
+        secondLang.innerHTML = "Node"
+
+
+      
+
+        const firstLang = document.querySelector('li:nth-child(1)')
+        firstLang.innerHTML = "PHP"
+
+
+
+          // Remove value
+          const lastLanguage = document.querySelector('li:last-child')
+        lastLanguage.remove()
+     
+    
+
+
+    </script>
+
+</body>
+</html>
