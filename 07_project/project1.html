@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switcher</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Color switcher</h1>
+        <p>Click the color to change the background color of this page.</p>
+
+        
+            <button style="background-color: black; padding: 60px;" id="black"></button>
+            <button style="background-color: blue; padding: 60px;" id="blue"></button>
+            <button style="background-color: red; padding: 60px;" id="red"></button>
+            <button style="background-color: Green; padding: 60px;" id="green"></button>
+        
+    </div>
+
+
+
+
+    <script>
+       const btn = document.querySelectorAll('button')
+       const body = document.querySelector('body') 
+
+       btn.forEach(function(buttons){
+    
+        console.log(buttons);
+
+        buttons.addEventListener('click', function(e){
+
+            console.log(e)
+            console.log(e.target)
+            if (e.target.id === 'green'){
+                body.style.backgroundColor = "green"
+            }
+
+            if (e.target.id === 'black'){
+                body.style.backgroundColor =  e.target.id
+            }
+
+            if (e.target.id === 'blue'){
+                body.style.backgroundColor =  e.target.id
+            }
+
+            if (e.target.id === 'red'){
+                body.style.backgroundColor = e.target.id;
+            }
+
+
+           
+        })
+            
+    
+            
+        })
+      
+        
+
+        
+    </script>
+</body>
+</html>
